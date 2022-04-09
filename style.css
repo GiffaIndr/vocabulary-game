@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Montserrat', serif;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background: url('ROAD.png');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.game-quiz-container{
+    width: 40%;
+    height: 30rem;
+    background-color: rgba(224, 224, 224, 0.986);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   border-radius: 30px;
+   border: 8px solid rgb(0, 0, 0);
+}
+
+.game-details-container{
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game-details-container h1{
+    font-size: 1.2rem;
+}
+
+.game-question-container{
+    width: 80%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(50, 50, 50);
+    border-radius: 25px;
+}
+
+ .game-question-container h1{
+     font-size: 1.1rem;
+     text-align: center;
+     padding: 3px;
+ }
+
+ .game-options-container{
+     width: 80%;
+     height: 12rem;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ .game-options-container span{
+     width: 45%;
+     height: 3rem;
+     border: 2px solid darkgrey;
+     border-radius: 20px;
+     overflow: hidden;
+ }
+
+ span label{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     transition: transform 0.3s;
+     font-weight: 600;
+     color: rgb(22, 22, 22);
+ }
+
+ span label:hover{
+     -ms-transform: scale(1.12);
+     -webkit-transform: scale(1.12);
+     transform: scale(1.12);
+     color: white;
+ }
+
+ input[type="radio"] {
+     position: relative;
+     display: none;
+ }
+
+ input[type=radio]:checked ~ .option{
+     background: rgb(136, 1, 255);
+ }
+
+ .next-button-container{
+     width: 50%;
+     height: 3rem;
+     display: flex;
+     justify-content: center;
+ }
+
+ .next-button-container button{
+     width: 8rem;
+     height: 2rem;
+     border-radius: 10px;
+     background: none;
+     color: rgb(25, 25, 25);
+     font-weight: 600;
+     border: 2px solid gray; 
+     cursor: pointer;
+     outline: none;
+ }
+
+ .next-button-container button:hover{
+     background-color: rgb(143, 93, 93);
+ }
+
+ .modal-container{
+     display: none;
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgb(0, 0, 0);
+     background-color: rgba(0, 0, 0, 4);
+     flex-direction: column;
+     align-items: center;
+     -webkit-animation: fadeIn 1.2s ease-in-out;
+     animation: fadeIn 1.2s ease-in-out;
+ }
+ .butn{
+    position: absolute;
+width: 134px;
+height: 70px;
+left: 206px;
+top: 603px;
+
+background: purple;
+border: 2px solid #000000;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+/* MENU */
+text-decoration: none;
+  display: inline-block;
+
+position: absolute;
+width: 93px;
+height: 29px;
+left: 226px;
+top: 615px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+
+color: #FFFFFF;
+ }
+ .butn:hover{
+    background-color: rgba(255, 253, 253, 0.493);
+    }
+ .modal-content-container{
+     height: 20rem;
+     width: 25rem;
+     background-color: rgb(43, 42, 42);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     border-radius: 25px;
+ }
+ .img2{
+    position: absolute;
+width: 137px;
+height: 136px;
+left: 1320px;
+top: 21px;
+}
+.img1{
+    
+position: absolute;
+width: 157px;
+height: 95px;
+left: 105px;
+top: 45px;
+}
+
+ .modal-content-container h1{
+     font-size: 1.3rem;
+     height: 3rem;
+     color: lightgray;
+     text-align: center;
+ }
+
+ .grade-details{
+     width: 15rem;
+     height: 10rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ .grade-details p{
+     color: white;
+     text-align: center;
+ }
+
+ .modal-button-container{
+     height: 2rem;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .modal-button-container button{
+     width: 10rem;
+     height: 2rem;
+     background: none;
+     outline: none;
+     border: 1px solid rgb(252, 242, 241);
+     color: white;
+     font-size: 1.1rem;
+     cursor: pointer;
+     border-radius: 20px;
+ }
+
+ .modal-button-container button:hover{
+     background-color: rgb(83, 82, 82);
+ }
+
+ @media(min-width : 300px) and (max-width : 350px){
+     .game-quiz-container{
+         width: 90%;
+         height: 80vh;
+     }
+     .game-details-container h1{
+         font-size: 0.8rem;
+     }
+     .game-question-container{
+         height: 6rem;
+     }
+     .game-question-container h1{
+         font-size: 0.9rem;
+     }
+     .game-options-container span{
+         width: 90%;
+         height: 2.5rem;
+     }
+     .game-options-container span label{
+         font-size: 00.8rem;
+     }
+     .modal-content-container{
+         width: 90%;
+         height: 25rem;
+     }
+
+     .modal-content-container h1{
+         font-size: 1.2rem;
+     }
+ }
+
+ @media(min-width : 350px) and (max-width : 700px){
+     .game-quiz-container{
+        width: 90%;
+        height: 80vh;
+     }
+     .game-details-container h1{
+         font-size: 1rem;
+     }
+     .game-question-container{
+         height: 8rem;
+     }
+     .game-question-container{
+         height: 8rem;
+     }
+     .game-question-container h1{
+         font-size: 1rem;
+     }
+     .game-options-container span{
+         width: 90%;
+     }
+     .modal-content-container{
+         width: 90%;
+         height: 25rem;
+     }
+     .modal-content-container h1{
+         font-size: 1.2rem;
+     }
+ }
