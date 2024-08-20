@@ -79,6 +79,7 @@ const questions = [
         optionD: "knife",
         correctOption: "optionA"
     },
+
 ]
 
 let shuffledQuestions = []
@@ -191,7 +192,7 @@ function checkForAnswer() {
                     remarkColor = "red"
                 }
                 else if (playerScore >= 4 && playerScore < 7) {
-                    remark = "Belajar lagi yee"
+                    remark = "Belajar lagi yaa"
                     remarkColor = "orange"
                 }
                 else if (playerScore >= 7) {
